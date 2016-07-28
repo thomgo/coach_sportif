@@ -149,6 +149,16 @@ footer {
         #landing_jumb {
           background-image: url(../img/background_medium.jpg);
         }
+
+        #h2_landing {
+          font-size: 3em;
+          margin-right: 20%;
+        }
+
+        #h3_landing {
+          font-size: 2em;
+          margin-left: 10%;
+        }
       }
 
    /* ##################################################################### */
@@ -167,6 +177,14 @@ footer {
 
         #landing_jumb {
           background-image: url(../img/background.jpg);
+        }
+
+        #h2_landing {
+          font-size: 4em;
+        }
+
+        #h3_landing {
+          font-size: 3em;
         }
 
       }
