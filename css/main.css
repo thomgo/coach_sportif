@@ -99,6 +99,23 @@ body {
   position: relative;
 }
 
+a, p{
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: white;
+}
+
+h2, h3 {
+  font-family: 'Dosis', sans-serif;
+}
+
+#landing_header {
+  background-color: rgba(0, 0, 0, 0.7);;
+}
+
 #landing_jumb {
   height: 100vh;
   background-image: url(../img/background.jpg);
