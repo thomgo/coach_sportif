@@ -118,7 +118,7 @@ h2, h3 {
 
 #landing_jumb {
   height: 100vh;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/background_small.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,6 +146,9 @@ footer {
    /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) {
 
+        #landing_jumb {
+          background-image: url(../img/background_medium.jpg);
+        }
       }
 
    /* ##################################################################### */
@@ -161,6 +164,10 @@ footer {
    /* ##################################################################### */
    /* Large devices (large desktops, 1200px and up) */
       @media (min-width: 1200px) {
+
+        #landing_jumb {
+          background-image: url(../img/background.jpg);
+        }
 
       }
 
