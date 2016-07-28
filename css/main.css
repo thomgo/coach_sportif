@@ -166,8 +166,12 @@ footer figure {
    /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) {
 
+      .navbar-nav .nav-link:hover {
+        text-decoration: underline;
+      }
+
         #landing_jumb {
-          background-image: url(../img/background_medium.jpg);
+          background-image: url(../img/background_medium_test.jpg);
         }
 
         #h2_landing {
