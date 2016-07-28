@@ -95,7 +95,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+body {
+  position: relative;
+}
 
 #landing_jumb {
   height: 100vh;
@@ -108,6 +110,11 @@ textarea {
   justify-content: center;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
    /* ##################################################################### */
    /* ##########################   SMARTPHONE   ########################### */
