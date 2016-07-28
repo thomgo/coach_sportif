@@ -99,6 +99,10 @@ body {
   position: relative;
 }
 
+a, a:hover, a:focus {
+  color: inherit;
+}
+
 a, p{
   font-family: 'Lato', sans-serif;
 }
@@ -116,13 +120,20 @@ h2, h3 {
   background-color: rgba(0, 0, 0, 0.7);;
 }
 
+nav button {
+  color: white;
+}
+
+#landing_jumb, footer, footer figure {
+  display: flex;
+}
+
 #landing_jumb {
   height: 100vh;
   background-image: url(../img/background_small.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -131,13 +142,22 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-   /* ##################################################################### */
-   /* ##########################   SMARTPHONE   ########################### */
-   /* ##################################################################### */
-   /* Extra small devices (phones, less than 768px) */
+footer p {
+  font-size: 0.8em;
+}
 
+footer figure {
+  flex-direction: column;
+}
+
+#landing_footer {
+  background-color: rgba(92, 184, 92, 0.7);
+}
 
 
    /* ##################################################################### */
@@ -158,6 +178,10 @@ footer {
         #h3_landing {
           font-size: 2em;
           margin-left: 10%;
+        }
+
+        footer figure {
+          flex-direction: row;
         }
       }
 
