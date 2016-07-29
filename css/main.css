@@ -153,16 +153,17 @@ nav button {
 /*Footer settings*/
 
 footer {
-  position: fixed;
-  bottom: 0;
+
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #5cb85c; 
+  background-color: #5cb85c;
   color: white;
 }
 
 #landing_footer {
+  position: fixed;
+  bottom: 0;
   background-color: rgba(92, 184, 92, 0.7);
 
 footer p {
