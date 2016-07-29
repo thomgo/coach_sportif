@@ -95,6 +95,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*General settings*/
+
 body {
   position: relative;
 }
@@ -116,8 +118,16 @@ h2, h3 {
   font-family: 'Dosis', sans-serif;
 }
 
+/*End general settings*/
+
+/*Header setttings*/
+
+header {
+  background-color: black;
+}
+
 #landing_header {
-  background-color: rgba(0, 0, 0, 0.7);;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav button {
@@ -138,14 +148,22 @@ nav button {
   justify-content: center;
 }
 
+/*End header settings*/
+
+/*Footer settings*/
+
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: #5cb85c; 
   color: white;
 }
+
+#landing_footer {
+  background-color: rgba(92, 184, 92, 0.7);
 
 footer p {
   font-size: 0.8em;
@@ -155,9 +173,9 @@ footer figure {
   flex-direction: column;
 }
 
-#landing_footer {
-  background-color: rgba(92, 184, 92, 0.7);
 }
+
+/*End footer settings*/
 
 
    /* ##################################################################### */
