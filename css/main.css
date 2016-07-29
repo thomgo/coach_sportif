@@ -165,6 +165,7 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: rgba(92, 184, 92, 0.7);
+}
 
 footer p {
   font-size: 0.8em;
@@ -172,8 +173,6 @@ footer p {
 
 footer figure {
   flex-direction: column;
-}
-
 }
 
 /*End footer settings*/
