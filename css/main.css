@@ -150,6 +150,12 @@ nav button {
 
 /*End header settings*/
 
+#calendar {
+  max-width: 90%;
+  display: block;
+  margin: auto;
+}
+
 /*Footer settings*/
 
 footer {
