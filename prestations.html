@@ -28,7 +28,7 @@
 
 -->
 
-        <header>
+        <header class="pos-f-t">
 
 <!-- Main firm title -->
           <h1 class="pull-xs-right pull-sm-left m-x-3">ML - coaching</h1>
@@ -73,7 +73,7 @@
 ~~~~~~~ Start Jumbotron ~~~~~~~~~~
 
 -->
-        <div class="jumbotron m-b-0 m-x-0 p-y-0 p-x-0">
+        <div class="jumbotron m-b-0 m-t-3 m-x-0 p-y-0 p-x-0">
 
 <!-- Caroussel in full width with sports images -->
 
@@ -123,8 +123,10 @@
 ~~~~~~~ Start main content ~~~~~~~
 
 -->
+
 <div class="container">
 
+<!-- first section -->
   <section class="row m-b-3">
 
     <h2 class="text-success m-y-2 m-l-1">Forfaits disponibles</h2>
@@ -157,13 +159,38 @@
 
   </section>
 
+<!-- second section -->
   <section class="row m-b-3">
 
+<!-- Methode presentation -->
     <h2 class="text-success m-y-2 m-l-1">Méthode de coaching</h2>
-    <p>Chacun doit progresser à son rythme et à la manière qui lui convient ! C'est cette idée qui guide l'ensemble de mon coaching.
-    C'est pourquoi je propose trois formules différentes qui répondront à vos attentes. Du sportif débutant ou occasionnel qui a besoin d'une remise
-    en forme, au semi-professionnel qui veut augmenter ses performances pour la compétitions. Tous mes forfaits comprennent au minimum 2 heures de
-    coaching personnalisé par semaine, des conseil en hygiène de vie et l'accès à du matériel professionnel.</p>
+    <figure class="pull-sm-left m-r-1 hidden-sm-down">
+      <img src="img/methode.jpg" alt="femme en renforcement musculaire" class="img-fluid">
+      <figcaption class="figure-caption text-xs-center">Séance pour renforcement <br> musculaire</figcaption>
+    </figure>
+    <p class="m-l-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis nibh vitae pellentesque vestibulum. Sed interdum et massa eu fringilla. Pellentesque lectus sem, convallis id sapien in, auctor luctus eros. Nulla sed nisl sem. Proin ac lacinia ex. Curabitur ac convallis erat. Donec viverra rutrum urna a pulvinar.
+Nullam egestas, nibh in volutpat tincidunt, mi sem ullamcorper risus, eu aliquam quam lacus quis ante. Sed faucibus urna mauris, ut molestie urna tempus eu. Praesent sed turpis egestas, vehicula odio in, varius orci. Nam ut efficitur sapien. Curabitur fermentum eros non pulvinar eleifend. Duis vel semper ex. Phasellus ut magna fermentum, sodales tellus ut, tempus massa. Morbi id maximus nisl, vitae interdum ante. Suspendisse egestas tellus porta leo aliquam venenatis id nec risus. Etiam efficitur sit amet quam non ornare.
+Vestibulum vehicula tortor quis dui tincidunt, vulputate auctor quam pharetra. Sed sodales dui in velit pretium varius. In facilisis eleifend dui, et rhoncus nisl maximus ut. Cras venenatis interdum metus, et luctus lorem iaculis ut. Proin consequat eleifend enim. Praesent in suscipit eros, ut congue arcu. Aliquam pulvinar odio in leo lacinia tempus. Etiam eu nisi ullamcorper, maximus nibh quis, posuere nunc. Donec mollis, felis ut sollicitudin feugiat, diam neque aliquam turpis, vel hendrerit neque mauris non lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget nibh nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas porttitor leo a leo suscipit molestie. Nam ligula orci, varius sit amet ante ac, commodo sodales magna. Etiam tempor euismod turpis et pellentesque.
+Integer vel purus quis lorem luctus eleifend sit amet vel mi. </p>
+
+  </section>
+
+</div>
+
+<!-- Allows a full black background for the third section -->
+<div class="container-fluid bg-inverse m-b-3">
+
+<!-- Third section -->
+  <section class="container p-y-2">
+
+    <h2 class="m-b-2 m-l-1">Mon travail en vidéo</h2>
+
+<!-- Presentation video, no bootsrap responsive embed since firefox does not recognize it -->
+    <embed>
+      <iframe width="100%" height="650px" src="https://www.youtube.com/embed/Qg6ijTVH4Z0" frameborder="0" allowfullscreen class="hidden-lg-down"></iframe>
+      <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Qg6ijTVH4Z0" frameborder="0" allowfullscreen class="hidden-sm-down hidden-lg-up"></iframe>
+      <iframe width="100%" height="200px" src="https://www.youtube.com/embed/Qg6ijTVH4Z0" frameborder="0" allowfullscreen class="hidden-sm-up"></iframe>
+    </embed>
 
   </section>
 
@@ -181,16 +208,16 @@
 
 -->
 
-        <footer class="m-y-0 text-xs-center p-t-1">
+<footer class="m-y-0 text-xs-center p-t-1">
 
-          <figure class="m-l-1">
-            <a href="#"><i class="fa fa-facebook-official fa-2x m-r-1" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter-square fa-2x m-r-1" aria-hidden="true"></i></a>
-          </figure>
+  <figure class="m-l-1">
+    <a href="#"><i class="fa fa-facebook-official fa-2x m-r-1" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-twitter-square fa-2x m-r-1" aria-hidden="true"></i></a>
+  </figure>
 
-          <p class="m-x-1">&copy;Marc Longo, ML-coaching SARRL, Toulouse. Une réalisation <a href="https://thomgo.github.io/portfolio/index.html">Thomas Gossart</a></p>
+  <p class="m-x-1">&copy;Marc Longo, ML-coaching SARRL, Toulouse. Une réalisation <a href="https://thomgo.github.io/portfolio/index.html">Thomas Gossart</a></p>
 
-        </footer>
+</footer>
 
 <!--
 
