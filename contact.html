@@ -28,39 +28,39 @@
 
 -->
 
-        <header>
+<header class="pos-f-t">
 
 <!-- Main firm title -->
-          <h1 class="pull-xs-right pull-sm-left m-x-3">ML - coaching</h1>
+  <h1 class="pull-xs-right pull-sm-left m-x-2">ML - coaching</h1>
 
 <!-- Navigation bar -->
-          <nav class="navbar">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-              &#9776;
-            </button>
-            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-            <ul class="nav navbar-nav pull-sm-right m-r-2">
-              <li class="nav-item m-x-1">
-                <a class="nav-link text-success" href="index.html">Accueil<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item m-x-1">
-                <a class="nav-link text-success" href="apropos.html">A propos</a>
-              </li>
-              <li class="nav-item m-x-1">
-                <a class="nav-link text-success" href="methode.html">Prestations</a>
-              </li>
-              <li class="nav-item m-x-1">
-                <a class="nav-link text-success" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item m-x-1">
-                <a class="nav-link text-success" href="calendrier.html">Calendrier</a>
-              </li>
-            </ul>
-            </div>
-          </nav>
+  <nav class="navbar">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav pull-sm-right m-r-2">
+      <li class="nav-item m-x-1">
+        <a class="nav-link text-success" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item m-x-1">
+        <a class="nav-link text-success" href="apropos.html">A propos</a>
+      </li>
+      <li class="nav-item m-x-1">
+        <a class="nav-link text-success" href="prestations.html">Prestations</a>
+      </li>
+      <li class="nav-item m-x-1">
+        <a class="nav-link text-success" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item m-x-1">
+        <a class="nav-link text-success" href="calendrier.html">Réservation</a>
+      </li>
+    </ul>
+    </div>
+  </nav>
 <!-- End navigation -->
 
-        </header>
+</header>
 
 <!--
 
@@ -73,9 +73,13 @@
 ~~~~~~~ Start Jumbotron ~~~~~~~~~~
 
 -->
-        <div class="jumbotron m-b-0 m-x-0">
-
-        </div>
+<div class="jumbotron m-b-0 m-t-3 m-x-0 p-y-0 p-x-0">
+  <figure>
+    <img src="img/race.jpg" alt="photo d'une course feminine" class="img-fluid hidden-lg-down">
+    <img src="img/race_medium.jpg" alt="photo d'une course feminine" class="img-fluid hidden-sm-down hidden-lg-up">
+    <img src="img/race_small.jpg" alt="photo d'une course feminine" class="img-fluid hidden-sm-up">
+  </figure>
+</div>
 
 <!--
 
@@ -89,7 +93,64 @@
 
 -->
 <div class="container">
-  <h2>10 ans d'expérience en coaching personnalisé</h2>
+
+  <section>
+
+    <h2 class="text-success">N'hésitez pas à me contacter</h2>
+    <p>Si ma méthode vous a convaincu ou que mon profil vous intéresse et que vous souhaitez en savoir plus, vous pouvez me contacter
+    via le formulaire ci-dessous. Attention cependant ce formulaire ne sert qu'aux demandes d'ordre général, aux devis personnalisés ou aux réclamations. Si vous souhaitez
+  vous inscrire, allez voir mes <a href="prestsations.html">forfaits</a>. Si vous êtes déjà inscrit et que vous voulez réservez votre
+  séance, ces sur le <a href="calendrier.html">calendrier</a> que ça se passe.</p>
+
+    <div class="row m-y-3">
+
+<!-- First column with the contact form -->
+      <div class="col-xs-12 col-sm-6">
+
+        <form class="m-b-2">
+          <fieldset class="form-group">
+            <label for="firstname">Prénom</label>
+            <input type="text" class="form-control" id="firstname" name="user_firstname" placeholder="Indiquez votre prénom">
+            <label class="m-t-1" for="lastname">Nom</label>
+            <input type="text" class="form-control" id="lastname" name="user_lastname" placeholder="Indiquez votre nom">
+            <label class="m-t-1" for="phone">Téléphone</label>
+            <input type="tel" class="form-control" id="phone" name="user_phone" placeholder="Indiquez votre numéro de téléphone(optionnel)">
+            <label class="m-t-1" for="mail">Adresse mail</label>
+            <input type="email" class="form-control" id="mail" name="user_email" placeholder="Indiquez votre email">
+            <small class="text-muted">Ces informations resteront confidentielles.</small>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="request">Quel est l'objet de votre demande ?</label>
+            <select class="form-control" id="request" name="user_request">
+              <option value="information_generale">Je souhaite plus d'information</option>
+              <option value="devis">Je veux établir un devis personnalisé</option>
+              <option value="reclamation">Réclamation</option>
+              <option value="autre">Autre</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="message">Votre message</label>
+            <textarea class="form-control" id="message" name="user_message" rows="3"></textarea>
+          </fieldset>
+          <button type="submit" class="btn btn-success" id="contact_button">Envoyer</button>
+        </form>
+
+      </div>
+<!-- End first column with the contact form -->
+
+<!-- Column with google maps -->
+      <div class="col-xs-12 col-sm-6">
+        <iframe class="hidden-sm-up map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46228.40965455997!2d1.397819782532087!3d43.6008028854239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1469900528678" height="250" style="border:0" allowfullscreen></iframe>
+        <iframe class="hidden-sm-down map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46228.40965455997!2d1.397819782532087!3d43.6008028854239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1469900528678" height="450" style="border:0" allowfullscreen></iframe>
+      </div>
+<!-- End column with google maps -->
+
+    </div>
+
+  </section>
+
 </div>
 
 <!--
