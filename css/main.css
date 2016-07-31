@@ -180,6 +180,14 @@ nav button {
   margin-right: auto;
 }
 
+.package {
+  position: relative;
+}
+
+.package:hover {
+  text-decoration: none;
+}
+
 /* End of the content settings*/
 
 /*Footer settings*/
