@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Marc Longio, coach sportif</title>
-        <meta name="description" content="Découvrez mon parcours et ma philosophie mais aussi pourquoi mes expériences font de moi le coach qu'il vous faut pour dépasser vos limites">
+        <meta name="description" content="Une fois inscrit c'est sur cette page que vous pouvez réserver votre séance en accédant directement à mes disponiblités">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -53,7 +53,7 @@
                 <a class="nav-link text-success" href="contact.html">Contact</a>
               </li>
               <li class="nav-item m-x-1">
-                <a class="nav-link text-success" href="calendrier.html">Réservation</a>
+                <a class="nav-link text-success" href="calendrier.html"><i class="fa fa-caret-right hidden-sm-down" aria-hidden="true"></i> Réservation</a>
               </li>
             </ul>
             </div>
@@ -98,9 +98,37 @@
   <section class="row m-b-3">
 
     <h2 class="text-success m-y-2 m-l-1">Réservez votre séance</h2>
+    <p>Si vous avez déjà réglé pour un de mes <a href="prestations.html">forfaits</a> ou éventuellement un coaching personnalisé, vous pouvez réserver votre séance
+    ici. Le calendrier vous indique les heures auxquelles je suis toujours disponibles. Vous pouvez ainsi facilement organiser votre
+   entraînement selon votre emploi du temps hebdomadaire. Pour réserver rien de plus simple, munissez-vous du code d'identification
+   fourni lors de votre inscription et choisissez une date et un horraire dans le formulaire. A bientôt !</p>
 
-<!-- Add a google calendar -->
-    <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=b09ljtmoc1jggr4dt3406nu7vg%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=Europe%2FParis" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" class="m-x-auto" id="calendar"></iframe>
+<!-- First column with the contact form -->
+    <aside class="col-xs-12 col-sm-6 m-t-2">
+
+<!-- Reservation form -->
+      <form class="m-b-2">
+        <fieldset class="form-group">
+          <label for="firstname">Prénom</label>
+          <input type="text" class="form-control" id="firstname" name="user_firstname" placeholder="Indiquez votre prénom">
+          <label class="m-t-1" for="lastname">Nom</label>
+          <input type="text" class="form-control" id="lastname" name="user_lastname" placeholder="Indiquez votre nom">
+          <label for="password" class="m-t-1">Identifiant</label>
+          <input class="form-control" type="password" placeholder="Indiquez votre identifiant à 8 chiffres" id="password">
+          <label for="datetime" class="m-t-1">Jour et heure de la séance</label>
+          <input class="form-control" type="datetime-local" id="datetime">
+        </fieldset>
+        <button type="submit" class="btn btn-success" id="contact_button">Je réserve</button>
+      </form>
+
+    </aside>
+
+<!-- Second column -->
+    <figure class="col-xs-12 col-sm-6 m-t-2">
+
+<!-- Google calendar -->
+      <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=b09ljtmoc1jggr4dt3406nu7vg%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=Europe%2FParis" height="600" class="m-x-auto" id="calendar"></iframe>
+    </figure>
 
   </section>
 
