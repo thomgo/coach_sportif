@@ -10,9 +10,9 @@ $("#h3_landing").show('slow');
 $(".package").hide();
 
 // Allows the packages to display in cascade
-  $("#beginner").fadeIn('slow', function(){
-    $("#regular").fadeIn('slow', function nextone (){
-      $("#gold").fadeIn('slow');
+  $("#beginner").fadeIn(1500, function(){
+    $("#regular").fadeIn(1500, function nextone (){
+      $("#gold").fadeIn(1500);
     });
   });
 
@@ -25,5 +25,6 @@ $(".package").hide();
   });
 
   $("#beginner, #regular, #gold").mouseleave(function() {
-    $(this).stop();
+    $(this).stop(true);
+    $(this).animate({bottom: 0},"slow");
   });
