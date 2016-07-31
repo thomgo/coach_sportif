@@ -157,13 +157,7 @@ nav button {
 
 /*Content settings*/
 
-#calendar {
-  max-width: 90%;
-  display: block;
-  margin: auto;
-}
-
-.video, .map {
+.video, .map, #calendar {
   width: 100%;
   border: 0;
 }
