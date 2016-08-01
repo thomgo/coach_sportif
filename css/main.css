@@ -95,10 +95,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*General settings*/
+/*
 
-body {
+~~~~~~~~General settings for sizes, fonts, colors, display...~~~~~~~~
+
+*/
+
+body, .package {
   position: relative;
+}
+
+/*make body to be screen wide*/
+body {
   min-height: 100vh;
 }
 
@@ -119,7 +127,7 @@ h1 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-h1, nav button {
+h1, nav button, footer {
   color: white;
 }
 
@@ -131,52 +139,72 @@ h2, h3 {
   width: 100%;
 }
 
-.top_button {
+.top_button, #landing_footer {
   position: fixed;
   bottom: 0;
-  right: 0;
-  z-index: 100;
-}
-/*End general settings*/
-
-/*Header setttings*/
-
-header {
-  background-color: black;
-}
-
-#landing_header {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #landing_jumb, footer, footer figure {
   display: flex;
 }
 
+#landing_jumb, footer figure {
+  flex-direction: column;
+}
+
+#landing_jumb, footer {
+  justify-content: center;
+}
+
+/*
+
+~~~~~~~~End general settings~~~~~~~~~
+
+*/
+
+/*
+
+~~~~~~~~~Header special setttings~~~~~~~~
+
+*/
+
+header {
+  background-color: black;
+}
+
+/*special header for the landing page*/
+#landing_header {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*special jumbotron for the landing page*/
 #landing_jumb {
   height: 100vh;
   background-image: url(../img/background_small.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: center;
 }
 
-/*End header settings*/
+/*
 
-/*Content settings*/
+~~~~~~~~~~End header settings~~~~~~
+
+*/
+
+/*
+
+~~~~~~Content settings~~~~~~
+
+*/
+
+.top_button {
+  right: 0;
+  z-index: 100;
+}
 
 .video, .map, #calendar {
   border: 0;
-}
-
-#video_large {
-  height: 650px;
-}
-
-#video_medium {
-  height: 400px;
 }
 
 #video_small {
@@ -189,31 +217,31 @@ header {
   margin-right: auto;
 }
 
-.package {
-  position: relative;
-}
-
 figure a:hover {
   color: #328432;
   text-decoration: none;
 }
 
-/* End of the content settings*/
+/*
 
-/*Footer settings*/
+~~~~~~~~End of the content settings~~~~~~~~
+
+*/
+
+/*
+
+~~~~~~~Footer settings~~~~~~~
+
+*/
 
 footer {
-  justify-content: center;
   align-items: center;
   background-color: #5cb85c;
-  color: white;
   position: absolute;
   bottom: -100px;
 }
 
 #landing_footer {
-  position: fixed;
-  bottom: 0;
   background-color: rgba(92, 184, 92, 0.7);
 }
 
@@ -225,11 +253,11 @@ footer p {
   font-size: 0.8em;
 }
 
-footer figure {
-  flex-direction: column;
-}
+/*
 
-/*End footer settings*/
+~~~~~~~End footer settings~~~~~~~
+
+*/
 
 
    /* ##################################################################### */
@@ -254,6 +282,10 @@ footer figure {
         #h3_landing {
           font-size: 2em;
           margin-left: 10%;
+        }
+
+        #video_medium {
+          height: 400px;
         }
 
         footer figure {
@@ -285,6 +317,10 @@ footer figure {
 
         #h3_landing {
           font-size: 3em;
+        }
+
+        #video_large {
+          height: 650px;
         }
 
       }
