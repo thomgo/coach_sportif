@@ -117,6 +117,9 @@ section a {
 
 h1 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1, nav button {
   color: white;
 }
 
@@ -124,6 +127,16 @@ h2, h3 {
   font-family: 'Dosis', sans-serif;
 }
 
+.video, .map, #calendar, footer {
+  width: 100%;
+}
+
+.top_button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
 /*End general settings*/
 
 /*Header setttings*/
@@ -134,10 +147,6 @@ header {
 
 #landing_header {
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-nav button {
-  color: white;
 }
 
 #landing_jumb, footer, footer figure {
@@ -159,7 +168,6 @@ nav button {
 /*Content settings*/
 
 .video, .map, #calendar {
-  width: 100%;
   border: 0;
 }
 
@@ -195,8 +203,6 @@ figure a:hover {
 /*Footer settings*/
 
 footer {
-
-  width: 100%;
   justify-content: center;
   align-items: center;
   background-color: #5cb85c;
@@ -209,6 +215,10 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: rgba(92, 184, 92, 0.7);
+}
+
+#landing_footer a:hover {
+  color: black;
 }
 
 footer p {
