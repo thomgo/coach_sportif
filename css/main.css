@@ -99,6 +99,7 @@ textarea {
 
 body {
   position: relative;
+  min-height: 100vh;
 }
 
 a, a:hover, a:focus {
@@ -200,6 +201,8 @@ footer {
   align-items: center;
   background-color: #5cb85c;
   color: white;
+  position: absolute;
+  bottom: -100px;
 }
 
 #landing_footer {
