@@ -120,7 +120,8 @@
           <input type="text" class="form-control" id="lastname" name="user_lastname" placeholder="Indiquez votre nom">
           <label for="password" class="m-t-1">Identifiant</label>
           <input class="form-control" type="password" placeholder="Indiquez votre identifiant à 8 chiffres" id="password">
-          <label for="datetime" class="m-t-1">Jour et heure de la séance</label>
+<!-- Format non supporté par firefox, warning au validateur, j'ai essayé d'intégrer un polyfile, sans succès -->
+          <label for="datetime" class="m-t-1">Jour et heure de la séance (jj/mm/aaaa 00:00)</label>
           <input class="form-control" type="datetime-local" id="datetime">
         </fieldset>
         <button type="submit" class="btn btn-success" id="contact_button">Je réserve</button>
