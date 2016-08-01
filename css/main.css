@@ -203,6 +203,10 @@ header {
   z-index: 100;
 }
 
+.top_button, .top_button:hover {
+  color: black;
+}
+
 .video, .map, #calendar {
   border: 0;
 }
