@@ -184,7 +184,8 @@ nav button {
   position: relative;
 }
 
-.package:hover {
+figure a:hover {
+  color: #328432;
   text-decoration: none;
 }
 
