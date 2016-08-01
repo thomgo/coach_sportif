@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <name> Thomas Gossart <role> Creator
 
 # THANKS
 
-    <name>
+    <name> Pixabay to provide such great royalty free pictures
 
 # TECHNOLOGY COLOPHON
 
